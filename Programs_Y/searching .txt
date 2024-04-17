@@ -1,0 +1,29 @@
+//searching 
+
+<?hh
+
+
+function search_element(array<int> $arr, int $element): bool {
+    $count = count($arr); 
+    for ($i = 0; $i < $count; $i++) {
+        if ($arr[$i] === $element) { 
+            return true; 
+        }
+    }
+    return false; 
+}
+
+
+$numbers = [5, 12, 3, 8, 21];
+
+$search_value = 8;
+
+
+$is_found = search_element($numbers, $search_value);
+
+
+if ($is_found) {
+    echo "$search_value is found in the array.\n";
+} else {
+    echo "$search_value is not found in the array.\n";
+}

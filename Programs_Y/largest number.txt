@@ -1,0 +1,28 @@
+//largest number
+
+
+
+<?hh
+
+function find_largest_number(array<int> $arr): int {
+   
+    $max = $arr[0];
+
+    
+    $count = count($arr);
+    for ($i = 1; $i < $count; $i++) {
+        
+        if ($arr[$i] > $max) {
+            $max = $arr[$i];
+        }
+    }
+
+    return $max;
+}
+
+$numbers = [5, 12, 3, 8, 21];
+
+$largest_number = find_largest_number($numbers);
+
+echo "The largest number in the array is: $largest_number\n";
+

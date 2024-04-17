@@ -1,0 +1,17 @@
+//IF ELSE
+
+<?hh // decl
+
+function checkEligibility(int $age): void {
+    if ($age >= 18) {
+        echo "You are eligible to vote.\n";
+    } else {
+        echo "You are not eligible to vote yet.\n";
+    }
+}
+
+<<__EntryPoint>>
+function main(): void {
+    $age = (int) readline("Enter your age: ");
+    checkEligibility($age);
+}

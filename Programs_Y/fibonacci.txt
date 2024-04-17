@@ -1,0 +1,24 @@
+fibonacci
+
+
+<?hh
+
+function generateFibonacci(int $limit): void {
+    $num1 = 0;
+    $num2 = 1;
+
+    echo "Fibonacci sequence up to {$limit}:\n";
+
+    while ($num1 <= $limit) {
+        echo $num1 . " ";
+        $sum = $num1 + $num2;
+        $num1 = $num2;
+        $num2 = $sum;
+    }
+}
+
+<<__EntryPoint>>
+function main(): void {
+    $limit = (int) readline("Enter the limit for Fibonacci sequence: ");
+    generateFibonacci($limit);
+}

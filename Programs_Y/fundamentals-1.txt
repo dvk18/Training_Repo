@@ -1,0 +1,11 @@
+//fundamentals
+//variables
+
+<??
+<<__EntryPoint>>
+function main(): void {
+   $name = "yash";
+    $age = 20;
+    $isStudent = true;
+    echo "Name: $name, Age: $age, Is Student: ".($isStudent ? 'Yes' : 'No');
+}

@@ -1,0 +1,11 @@
+//Strings
+
+<?hh
+
+<<__EntryPoint>>
+function main(): void {
+    $str1 = "Hello";
+    $str2 = 'World';
+    $combined = $str1 . ', ' . $str2;
+    echo $combined;
+}

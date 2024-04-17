@@ -1,0 +1,34 @@
+/*arrays and collections
+
+how to take input from the user:
+*We use fgets(STDIN) to read input from the user via the standard input stream (STDIN).
+*trim() function is used to remove any leading or trailing whitespace from the input.
+*We convert the input string to an integer using the intval() function.
+
+
+<?hh
+echo "Enter a number: "
+
+$input = trim(fgets(STDIN));
+$number = intval($input);
+echo "You entered: $number\n";*/
+
+//sum of array
+
+<?hh
+
+
+function array_sum(array<int> $arr): int {
+    $sum = 0;
+    $count = count($arr); 
+    for ($i = 0; $i < $count; $i++) {
+        $sum += $arr[$i]; 
+    }    return $sum;
+}
+
+
+$numbers = [1, 2, 3, 4, 5];
+
+$sum = array_sum($numbers);
+
+echo "Sum of array elements: $sum\n";

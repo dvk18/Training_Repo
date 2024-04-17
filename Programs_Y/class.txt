@@ -1,0 +1,25 @@
+
+
+//CLASS
+
+class Car {
+    public $brand;
+    public $model;
+    public $year;
+
+    public function __construct($brand, $model, $year) {
+        $this->brand = $brand;
+        $this->model = $model;
+        $this->year = $year;
+    }
+
+    public function getInfo() {
+        return "Brand: " . $this->brand . ", Model: " . $this->model . ", Year: " . $this->year;
+    }
+}
+
+$car1 = new Car("Toyota", "Corolla", 2020);
+echo $car1->getInfo(); 
+
+
+

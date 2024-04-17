@@ -1,0 +1,23 @@
+/*Introduction to Hack:
+
+Hack: Programming language by Facebook.
+Static Typing: Enhances type safety.
+//gradually typing langauge
+Goals: Better performance, productivity.
+
+Variables: Declared using $ followed by the variable name.
+Data Types: Include int, float, string, bool, array, etc.
+Comments: Single-line comments (//) and multi-line comments (/* */) are supported.
+Basic Operators: Arithmetic (+, -, *, /, %), comparison (==, !=, >, <, >=, <=), logical (&&, ||, !), etc.
+<?hh // Declaring  the file as a Hack file
+<<__EntryPoint>>  //Marks where the program starts.
+
+
+hello world program */
+
+<?hh
+
+<<__EntryPoint>>  
+function main(): void {
+    echo "Hello, Hack World!";
+}
